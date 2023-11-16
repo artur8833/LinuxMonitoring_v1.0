@@ -1,9 +1,4 @@
 #!/bin/bash 
-REGEX="^[0-9]+$"
-
-if [[ ! -n "$1"  ! $1~=REGEX ]]
-then 
-echo "Параметр является числом или пустым"
-else
-echo "$1"
-fi
+echo HOSTNAME = $HOSTNAME
+echo TIMEZONE = timedatectl
+echo DATE =  $(date  "+%d %b %Y %H:%M:%S") 
