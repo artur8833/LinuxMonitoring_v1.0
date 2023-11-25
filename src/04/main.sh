@@ -32,21 +32,21 @@ fi
 
 if [ -n "$flag_column1_font_color" ]
 then 
-echo "Column 1 background = $column1_font_color (default)"
+echo "Column 1 font color = $column1_font_color (default)"
 else 
-echo "Column 1 background = $column1_font_color (${name_color[$column1_font_color]})"
+echo "Column 1 font color= $column1_font_color (${name_color[$column1_font_color]})"
 fi
 
 if [ -n "$flag_column2_background" ]
 then 
-echo "Column 1 background = $column2_background (default)"
+echo "Column 2 background = $column2_background (default)"
 else 
-echo "Column 1 background = $column2_background (${name_color[$column2_background]})"
+echo "Column 2 background = $column2_background (${name_color[$column2_background]})"
 fi
 
 if [ -n "$flag_column2_font_color" ]
 then 
-echo "Column 1 background = $column2_font_color (default)"
+echo "Column 2 font color = $column2_font_color (default)"
 else
-echo "Column 1 background = $column2_font_color (${name_color[$column2_font_color]})"
+echo "Column 2 font color= $column2_font_color (${name_color[$column2_font_color]})"
 fi

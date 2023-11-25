@@ -19,10 +19,6 @@ path=$(echo "$1" | sed 's/^[./]*//')
 absolute_path="$(dirname $PWD)/$path"
 fi
 
-echo 
-echo "$absolute_path"
-echo
-
 if [ ! -d "$absolute_path" ] 
 then
     echo "No such file or directory."

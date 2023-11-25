@@ -1,4 +1,9 @@
 #!/bin/bash 
+if [  -n "$1" ]
+then 
+    echo "Скрипт работает без параметров"
+    exit 1
+fi
 
 source All_comand.sh
 

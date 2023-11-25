@@ -31,7 +31,7 @@ top_ten_type()
 
 top_ten_hash()
 {
-    listt3=$(find "$absolute_path" -type f -exec du -sh --exclude="$absolute_path" {} + | sort -rh | head -n 10 | awk '{print $2, $1}')
+    listt3=$(find "$absolute_path" -mindepth 1 -type f -executable -exec du -sh --exclude="$absolute_path" {} + | sort -rh | head -n 10 | awk '{print $2, $1}')
     IFS=$'\n'
     count=0
     for var in $listt3

@@ -1,7 +1,7 @@
 #!/bin/bash 
 
 echo HOSTNAME = $HOSTNAME
-echo TIMEZONE = $(timedatectl  | grep "Time zone")
+echo TIMEZONE = $(timedatectl  | grep "Time zone" | awk '{print $3}')
 echo DATE = $(date  "+%d %b %Y %H:%M:%S") 
 echo USER =  $(whoami)
 echo OS = $(uname -sr)
